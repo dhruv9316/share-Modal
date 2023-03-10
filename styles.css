@@ -7,15 +7,26 @@
   height: 100vh;
   overflow-x: hidden;
   overflow-y: auto;
+  background-image: url("./images/bg-1.webp");
+  background-size: cover;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+.main-wrapper.dark{
+  background-image: url("./images/bg-2.png");
+  /* background-color: #101920; */
 }
   
-body {
-    /* background-color: #101920; */
+/* body {
+    background-color: #101920;
     background-image: url("./images/bg-1.webp");
     background-size: cover;
-    /* background-size: contain; */
+    background-size: contain;
     font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-}
+} */
+/* body .light{
+  background-image: url("./images/bg-1.webp");
+} */
+
   
 .wrapper {
     width: 100vw;
@@ -38,6 +49,10 @@ body {
     background: rgb(255, 238, 238);
     animation: circle1Animate 15s infinite;
   }
+  /* .circle1 .dark{
+    box-shadow: 0 0 500px #d84869;
+    background: linear-gradient(-25deg, #d84869, #f46641);
+  } */
   
   @keyframes circle1Animate {
     50% {
@@ -64,6 +79,11 @@ body {
     background: rgb(255, 238, 238);
     animation: circle2Animate 8s infinite;
   }
+  /* .circle2 .dark{
+    box-shadow: 0 0 500px #5648d8;
+    background: linear-gradient(-25deg, #5648d8, #8641f4);
+  } */
+
   @keyframes circle2Animate {
     50% {
       bottom: 6%;
@@ -77,7 +97,8 @@ body {
     translate: -50% -50%;
     height: 450px;
     /* border: 2px solid #ffffff30; */
-    border: 2px solid #10192048;
+    /* border: 2px solid #10192048; */
+    border: 1px solid #183657; 
 
     display: flex;
     flex-direction: column;
@@ -90,21 +111,58 @@ body {
     /* color: #ffffff; */
     /* color: #383737; */
     color: #101920e7;
+    /* color:#183657; */
     padding: 20px 50px;
   }
+  .card-wrapper.dark{
+    border: 2px solid #ffffff30;
+    background: #92929277;
+    color: #ffffff;
+  }
+
+  .btn-theme{
+    
+    /* all: unset; */
+    background: transparent;
+    border: none;
+    font-size: 3em;
+  }
+
+  .dark-icon{
+    position: absolute;
+    color: #183657;
+    opacity: 1;
+    top: 2%;
+    right: 2%;
+  }
+
+  .light-icon{
+    color: white;
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    opacity: 0;
+  }
+
+
   .card-wrapper div img {
     border: 2px solid #ffffff30;
     width: 150px;
     height: 150px;
     border-radius: 50%;
   }
-  .designation h3 {
+  .designation{
     text-align: center;
     /* color: #ffffff85; */
     /* color: #101920; */
     color: #101920af;
+    /* color: #183657; */
 
   }
+  .designation.dark{
+    color: #ffffff85;
+  }
+
   .user-name h2 {
     font-size: 2rem;
     text-align: center;
@@ -132,6 +190,11 @@ body {
     cursor: pointer;
     transition: all 0.5s;
   }
+  .btn-share.dark{
+    border: 2px solid #ffffffb9;
+    color: #ffffffb9;
+  }
+
   .btn-share:hover{
     scale: 1.1;
   }
@@ -152,6 +215,11 @@ body {
     cursor: pointer;
     transition: all 0.5s;
   }
+  .btn-follow.dark{
+    border: 2px solid #ffffffb9;
+    color: #ffffffb9;
+  }
+
 
   .btn-follow:hover{
     scale:1.1;
@@ -163,13 +231,19 @@ body {
     background: #131313d8 ;
     color:#ffffffb9;
   }
+  .btn-card:hover.dark{
+    background: #ffffffb9;
+    color: #131313;
+  }
   
   .modal {
     position: fixed;
     top: 50%;
     left: 50%;
     translate: -50% -50%;
-    border: 2px solid #ffffff59;
+    /* border: 2px solid #ffffff59; */
+    border: 1px solid black;
+    /* #49494959; */
     width: 500px;
     scale: 0;
     /* background: #00000088; */
@@ -182,6 +256,12 @@ body {
     border-radius: 20px;
     transition: 0.5s ease-in-out;
   }
+  .modal.dark{
+    border: 2px solid #ffffff59;
+    background: #00000088;
+    color: white;
+  }
+
   .modal-header {
     display: flex;
     margin-bottom: 25px;
@@ -189,8 +269,13 @@ body {
     justify-content: space-between;
     align-items: center;
     padding-bottom: 12px;
-    border-bottom: 1px solid #ffffff88;
+    /* border-bottom: 1px solid #ffffff88; */
+    border-bottom: 1px solid #101920;
   }
+  .modal-header.dark{
+    border-bottom: 1px solid #ffffff88;
+  } 
+
   .modal-header div i {
     font-size: 30px;
   }
@@ -287,7 +372,7 @@ body {
     pointer-events: initial;
   }
   @media (max-width: 768px) {
-    body{
+    .main-wrapper{
       background: #2770F1;
     }
     .card-wrapper {
@@ -303,7 +388,7 @@ body {
   }
   
   @media (max-width: 480px) {
-    body{
+    .main-wrapper{
       /* background: #2770F1; */
       background:linear-gradient(170deg, #005EFF 0%, #00BCD4 50%, #8297EE 100%);
     }
