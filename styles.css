@@ -397,8 +397,8 @@
     .circle1 {
       top: 10%;
       left: 10%;
-      width: 9em;
-      height: 9em;
+      width: 6em;
+      height: 6em;
     }
 
     @keyframes circle1Animate {
@@ -410,16 +410,16 @@
     }
 
     .circle2 {
-      bottom: 10%;
-      right: 10%;
-      width: 10em;
-      height: 10em;
+      bottom: 3%;
+      right: 3%;
+      width: 7em;
+      height: 7em;
     }
 
     @keyframes circle2Animate {
       50% {
-        bottom: 6%;
-        right: 15%;
+        bottom: 8%;
+        right: 8%;
       }
     }
 
