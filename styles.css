@@ -395,16 +395,16 @@
     }
 
     .circle1 {
-      top: 10%;
-      left: 10%;
+      top: 3%;
+      left: 3%;
       width: 6em;
       height: 6em;
     }
 
     @keyframes circle1Animate {
       50% {
-        left: 16%;
-        top: 4%;
+        left: 8%;
+        top: 8%;
         scale: 1.11;
       }
     }
