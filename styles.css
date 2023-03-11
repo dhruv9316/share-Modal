@@ -116,7 +116,7 @@
   }
   .card-wrapper.dark{
     border: 2px solid #ffffff30;
-    background: #92929277;
+    /* background: #92929277; */
     color: #ffffff;
   }
 
@@ -126,6 +126,7 @@
     background: transparent;
     border: none;
     font-size: 3em;
+    cursor: pointer;
   }
 
   .dark-icon{

@@ -1,7 +1,6 @@
 const modal = document.querySelector(".modal");
 const overlay = document.querySelector(".overlay");
 
-
 const themeButton = document.querySelector(".btn-theme");
 const mWrapper = document.querySelector(".main-wrapper");
 const cardWrapper = document.querySelector(".card-wrapper");
